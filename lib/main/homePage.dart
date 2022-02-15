@@ -10,6 +10,28 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+        child: Container(
+          child: Row(
+            children: [
+              Column(
+                children: [
+                  Text("Country"),
+                  Text("City"),
+                ],
+              ),
+              Row(
+                children: [
+                  Container(
+                    width: 40,
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
